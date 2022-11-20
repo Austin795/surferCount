@@ -7,19 +7,17 @@ options.add_argument('--ignore-certificate-errors')
 options.add_argument("--test-type")
 driver = webdriver.Chrome(options=options)
 
+# Load surf spot web cam, eg. Honolulu, HI
 driver.get('https://www.surfline.com/surf-report/south-shore-ala-moana-park/5842041f4e65fad6a770889c?camId=583494d13421b20545c4b51e')
+
+# Give time to insure page load
 time.sleep(10)
-#element = driver.find_element(By.NAME, "jw-icon jw-icon-display jw-button-color jw-reset")
+
+# Locate play button within page
 element = driver.find_element(By.CSS_SELECTOR, "[aria-label=Play]")
-#element = driver.find_elements_by_css_selector("[aria-label=Play]")
 element.click()
+
+# Give time to watch surfline AD 😉 (usually 15s)
 time.sleep(30)
-driver.save_screenshot("screenshot.png")
-
+driver.save_screenshot("screenshot_surf_spot.png")
 driver.close()
-
-
-# driver.implicitly_wait(20) 
-# driver.switch_to.frame(0) 
-# element = driver.find_element_by_xpath("//button[@class='ytp-large-play-button ytp-button']")
-# element.click()
