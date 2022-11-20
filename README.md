@@ -4,6 +4,6 @@ People want to surf good coniditions but its often crowded when its good. Help t
 
 
 
-![alt text](https://github.com/[austin795]/[surferCount]/blob/[main]/test_2.png?raw=true)
+![alt text](https://github.com/Austin795/surferCount/blob/master/test_2.png)
 
 
