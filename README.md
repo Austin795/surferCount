@@ -13,3 +13,7 @@ Leverage pre-existing global surf webcams run by Surfline, Magic Seaweed, and ot
 4. Clean up model results and give number found
 5. Report number of surfers alongside surf conditions
 6. Notify users in some way when surf conditions are good and crowd size is small 
+
+Example processed image
+
+![alt text](https://github.com/Austin795/surferCount/blob/master/test_2.png)
